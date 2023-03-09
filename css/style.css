@@ -134,6 +134,7 @@ nav {
 }
 
 .home .banner .slogan-1 {
+  margin: 0 30px;
   color: var(--color-prymary);
   text-transform:uppercase;
   letter-spacing: 4px;
