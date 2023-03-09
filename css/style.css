@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  
+}
+
 :root {
   --color-prymary: #917758;
   --color-secondary:#3c2915;
@@ -390,10 +395,10 @@ nav {
  
   .nav-list {
     position: absolute;
-    top: 8vh;
+    top: 20vh;
     right: 0;
-    width: 40vw;
-    height: 92vh;
+    width: 50vw;
+    height: 80vh;
     background: #1d1d20;
     flex-direction: column;
     align-items: center;
@@ -401,6 +406,7 @@ nav {
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
     z-index: 10;
+    
   }
   .nav-list li {
     margin-left: 0;
@@ -430,7 +436,7 @@ nav {
   }
 
   .about .experience {
-    
+    display: none;
     margin-top: 0px;
   }
 
