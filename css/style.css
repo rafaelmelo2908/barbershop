@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 18vh;
+  scroll-padding-top: 22vh;
   
 }
 
@@ -49,7 +49,7 @@ body {
   width: 100%;
   background: rgba(0,0,0,.6);
   border-bottom: 1px solid #000;
-  height: 18vh;
+  height: 22vh;
   z-index: 10;
   
 }
@@ -423,7 +423,7 @@ body {
     width: 100%;
     height: calc(100vh - 20vh);
     left: 0;
-    top: 18vh;
+    top: 22vh;
     flex-direction: column;
     align-items: center;
     border-top: 1px solid #444;
