@@ -5,51 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Newcastle Barbershop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css"/>
   </head>
 
   <body>
 
     <header>
-      <nav>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+      <div class="navbar-area">
+        <div class="container">
+          <nav class="site-navbar">
+
+            <!-- site menu/nav -->
+            <ul>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li class="logo">
+                <img src="image/logo.png" alt="Barber Shop" class="logo"
+                />
+              </li>
+              <li>
+                <a href="#gallery">Gallery</a>
+              </li>
+              <li>
+                <a href="#appointment">Booking</a>
+              </li>
+              <li>
+                <a href="#location">Contact</a>
+              </li>
+            </ul>
+
+            <!-- nav-toggler for mobile version only -->
+            <button class="nav-toggler">
+              <span></span>
+            </button>
+
+          </nav>
+
         </div>
-        <ul class="nav-list">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li class="logo">
-            <a class="logo" href="/"
-              ><img src="image/logo.png" alt="Barber Shop" class="logo"
-            /></a>
-          </li>
-          <li>
-            <a href="#gallery">Gallery</a>
-          </li>
-          <li>
-            <a href="#appointment">Booking</a>
-          </li>
-          <li>
-            <a href="#location">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      </div>
     </header>
 
     <section id="home" class="home">
       
       <div class="banner">
         <span class="slogan-1">Professionalism and excellence</span>
-        <h1>Newcastle Barber Shop</h1>
+        <h1>Newcastle <span class="barberShop">Barber Shop</span></h1>
         <span class="slogan-2">The best place to take care of your style</span>
         <img src="image/much-img.png" alt="Barber Shop">
       </div>
@@ -58,56 +66,29 @@
 
     <section id="about" class="about">
       <div class="container">
-        <div class="opening-hours">
-            <div class="overlay">
-                <img src="image/classic-cut.png" alt="Opening Hours" class="icon-cut">
-                <h3>Opening Hours</h3>
+        <h2>About us</h2>
+        <img src="image/heading-ic-white.png" alt="About us">
 
-                <div class="text">
-                    <h4>Monday to Friday</h4>
-                    <span>09:00 AM - 17:00 PM</span>
-                </div>
-
-                <div class="text">
-                    <h4>Saturday</h4>
-                    <span>09:00 AM - 14:00 PM</span>
-                </div>
-
-                <div class="text">
-                    <h4>Sunday</h4>
-                    <span>Closed</span>
-                    <br><br>
-                    <img src="image/loc-ic.png" alt="adress">
-                    <span>Tenerife Buildings
-                        Station Road
-                        South Gosforth
-                        NE7 1QD</span>
-                        <br><br>
-                    <img src="image/phone-ic.png" alt="adress">
-                    <span>+44 07895 010104</span>
-                </div>
-
-            </div>
-            
-        </div>
         <div class="experience">
-            <p>A unique story</p>
-            <h2>52 years of experience
-            </h2>
-        
+          
+
+          <div class="aboutUs">
+      
             <div class="text">
-                <div>
-                    <p>The Barber Shop has been in the hair grooming industry for over 52 years and has gained a reputation for delivering exceptional services to its customers. With a loyal clientele, the shop is known for its quality and commitment to its clients.</p>   
-
-                    <p>The Barber Shop offers a wide range of services including haircuts, shaves, and grooming. The experienced barbers use only the best products and pay personal attention to each client, ensuring a satisfying and personalized experience.</p> 
-                    
-                    <p>The shop's atmosphere is warm and welcoming, and the staff is always friendly and accommodating. The Barber Shop invests in modern equipment to provide a comfortable and efficient hair care experience for its customers. Whether in need of a quick trim or a full grooming session, The Barber Shop is the ideal destination for top-notch hair care services.</p> 
-                </div> 
-
-                <img class="shave-brush" src="image/shave-brush.jpg" alt="52 years of experience
-                ">
+              <span>A unique story</span>
+              <h2>52 years of experience</h2>
+            
+              
+              <p>The Barber Shop has been providing exceptional hair grooming services for over 52 years. Their skilled barbers use high-quality products and provide personalized attention to each client, ensuring a satisfying experience. With a wide range of services including haircuts, shaves, and grooming, The Barber Shop caters to every client's needs. The shop's warm atmosphere, friendly staff, and modern equipment make it the perfect destination for top-notch hair care services.</p>   
+              
             </div>
-        </div>
+
+            <img src="image/imgAboutUs.jpg" alt="About us">
+
+          </div>
+      </div>
+        
+        
       </div>
     </section>
 
@@ -117,27 +98,31 @@
           <img src="image/heading-ic.png" alt="Services">
 
           <div class="boxes">
-              <div class="box">
-                  <img src="image/classic-cut.png" alt="classic cut">
-                  <h4>Cuts and fades</h4>
-                  <img src="image/head-line-ic.png" alt="head line">
-                  <p>Men’s barbershop services may come and go as tastes change, but the haircut is the foundation of any barbershop worth its salt. Haircuts and fades are staples, and barbers should stay on top of the latest styles.</p>
-                  
-              </div>
+            <div class="box">
+              <img src="image/classic-cut.png" alt="classic cut">
+              <h4>Cuts and fades</h4>
+             
+              <img src="image/head-line-ic.png" alt="head line">
+              <p>Cuts and fades are the foundation of a barber's skillset. Barbers must stay updated with the latest styles to offer a personalized experience. Attention to detail is crucial, and the perfect cut or fade can boost a client's confidence. Whether it's a quick trim or a complete style overhaul, a skilled barber can deliver the perfect look.</p>
+              <p class="price">Price 15£</p>
+                
+            </div>
 
-              <div class="box">
-                  <img src="image/clipper-cut.png" alt="Clipper cut">
-                  <h4>Beard and mustache</h4>
-                  <img src="image/head-line-ic.png" alt="head line">
-                  <p>Offering trimming services is just the start — facial hair services should also include oil treatments, shaping, and conditioning to keep beard and mustache hair clean and vibrant. .</p>
-              </div>
+            <div class="box">
+              <img src="image/clipper-cut.png" alt="Clipper cut">
+              <h4>Beard and mustache</h4>
+              <img src="image/head-line-ic.png" alt="head line">
+              <p>Beard and mustache grooming are essential barber services. A well-groomed beard or mustache can add masculinity to a person's appearance. A skilled barber offers shaping, trimming, styling, and moisturizing services. With attention to detail and an eye for style, a barber can help clients achieve the perfect look..</p>
+              <p class="price">Price 10£</p>
+            </div>
 
-              <div class="box">
-                  <img src="image/razoe-shaver.png" alt="Razoe shaver">
-                  <h4>Straight razor shave</h4>
-                  <img src="image/head-line-ic.png" alt="head line">
-                  <p>Quality straight razor shaves are hot and show no signs of cooling off. Staff with shaving experts who know how to make this offering special for clients to reap dividends.</p>
-              </div>
+            <div class="box">
+              <img src="image/razoe-shaver.png" alt="Razoe shaver">
+              <h4>Straight razor shave</h4>
+              <img src="image/head-line-ic.png" alt="head line">
+              <p>Straight razor shaving is a classic barber service that provides a smooth and refreshed feeling. A good barber will use quality products to protect and soothe the skin. This service is often combined with other grooming services to provide a complete experience that leaves clients looking and feeling great.</p>
+              <p class="price">Price 10£</p>
+            </div>
           </div>
       </div>
   </section>
@@ -156,9 +141,6 @@
           </div>
           <div  class="gallery-item">
               <img class="gallery-image"  src="image/gallery-img3.jpg" alt="gallery">
-          </div>
-          <div  class="gallery-item">
-              <img class="gallery-image"  src="image/gallery-img4.jpg" alt="gallery">
           </div>
           <div  class="gallery-item">
             <img class="gallery-image"  src="image/gallery-img5.jpg" alt="gallery">

@@ -1,44 +1,28 @@
-class MobileNavbar {
-  constructor(mobileMenu, navList, navLinks) {
-    this.mobileMenu = document.querySelector(mobileMenu);
-    this.navList = document.querySelector(navList);
-    this.navLinks = document.querySelectorAll(navLinks);
-    this.activeClass = "active";
+// define all UI variable
+const navToggler = document.querySelector('.nav-toggler');
+const navMenu = document.querySelector('.site-navbar ul');
+const navLinks = document.querySelectorAll('.site-navbar a');
 
-    this.handleClick = this.handleClick.bind(this);
-  }
+// load all event listners
+allEventListners();
 
-  animateLinks() {
-    this.navLinks.forEach((link, index) => {
-      link.style.animation
-        ? (link.style.animation = "")
-        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-            index / 7 + 0.3
-          }s`);
-    });
-  }
-
-  handleClick() {
-    this.navList.classList.toggle(this.activeClass);
-    this.mobileMenu.classList.toggle(this.activeClass);
-    this.animateLinks();
-  }
-
-  addClickEvent() {
-    this.mobileMenu.addEventListener("click", this.handleClick);
-  }
-
-  init() {
-    if (this.mobileMenu) {
-      this.addClickEvent();
-    }
-    return this;
-  }
+// functions of all event listners
+function allEventListners() {
+  // toggler icon click event
+  navToggler.addEventListener('click', togglerClick);
+  // nav links click event
+  navLinks.forEach( elem => elem.addEventListener('click', navLinkClick));
 }
 
-const mobileNavbar = new MobileNavbar(
-  ".mobile-menu",
-  ".nav-list",
-  ".nav-list li",
-);
-mobileNavbar.init();
+// togglerClick function
+function togglerClick() {
+  navToggler.classList.toggle('toggler-open');
+  navMenu.classList.toggle('open');
+}
+
+// navLinkClick function
+function navLinkClick() {
+  if(navMenu.classList.contains('open')) {
+    navToggler.click();
+  }
+}
