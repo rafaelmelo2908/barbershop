@@ -401,6 +401,12 @@ body {
 
   /***NAVBAR***/
 @media screen and (max-width: 980px) {
+
+  .home {
+
+    background-attachment:scroll;
+    
+  }
   .container {
     max-width: 720px;
     margin-top: 50px;
@@ -469,6 +475,12 @@ body {
 
   .services .box {
     width: 100%;
+  }
+
+  /****GALLERY****/
+
+  .gallery {
+    height: 100%;
   }
   
 }
