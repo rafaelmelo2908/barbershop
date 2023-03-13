@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font-family: 'Julee', cursive;
+  font-family: 'Kameron', serif;
 }
 
 .container {
@@ -141,8 +141,9 @@ body {
  
 }
 
-.barberShop {
+.home .banner h1 .barberShop {
   color: var(--color-prymary);
+  font-size: max(60px, 6vw);
  
 }
 
@@ -153,12 +154,12 @@ body {
   letter-spacing: 4px;
   font-size: max(16px, 1.5vw);
   text-align: center;
-  font-family: 'Julee', cursive;
+  
 }
 
 .home .banner h1 {
   font-size: max(60px, 6vw);
-  font-family: 'Julee', cursive;
+  
 }
 
 .home .banner .slogan-2 {
@@ -176,9 +177,9 @@ body {
 
 
 .about {
-  padding-top: 50px;
+  padding: 50px 0;
   text-align: center;
-  height: 100vh;
+  height: 100%;
   background-color: var(--color-prymary);
 }
 
@@ -266,7 +267,7 @@ body {
   padding: 50px 0;
   text-align: center;
   background-color: var(--color-prymary-light);
-  height: 100vh;
+  height: 100%;
 }
 
 .services h2 {
@@ -296,20 +297,23 @@ body {
   border: 3px solid var(--color-prymary);
   padding: 50px 40px;
   margin: 10px;
-  width: 30%;
+  width: 40%;
 }
 
-.services .box .price {
-  font-size: 30px;
-  border: 2px solid var(--color-prymary);
-  padding: 10px;
-  border-radius: 10px;
- 
+.services .box .priceList {
+  list-style: none;
 }
 
-.services .box:hover {
-  background-color: var(--color-secondary);
-  color: white;
+.services .box .priceList li {
+  padding: 10px 0 5px 0;
+  border-bottom: dotted 2px var(--color-secondary);
+  text-align: left;
+  font-size: max(15px, 1.5vw);
+}
+
+
+.services .box .priceList li strong {
+  float: right;
 }
 
 
@@ -319,9 +323,6 @@ body {
   font-size: max(30px, 2vw);
 }
 
-.services .box h4:hover {
-  color:white;
-}
 
 .services .box p {
   margin-top: 20px;
@@ -336,7 +337,7 @@ body {
 
 
 .gallery {
-  height: 100vh;
+  height: 100%;
   padding:50px 0;
   background-color: var(--color-prymary);
  
@@ -488,6 +489,87 @@ body {
   }
 }
 
+/**************
+*  LOCATION
+***************/
+
+.location {
+  padding: 100px 0;
+  background: url(../image/bg-location.jpg);
+  background-size: cover;
+}
+
+.location .contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.location h2 { 
+  text-align: center;
+  color: var(--color-prymary-light);
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.location img {
+  margin: 50px auto;
+  display: block;
+  
+}
+
+
+.location .head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #191919;
+  max-width: 400px;
+  padding: 20px;
+  margin-right: 50px;
+ 
+}
+
+.location .head .info {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.location .head .info .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-prymary);
+  border-radius: 100%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+ 
+span {
+  display: block;
+  font-size: 18px;
+}
+
+span:first-child {
+  color: silver;
+}
+
+span:last-child {
+  color: white;
+}
+
+
+
+
 
 
 
@@ -585,6 +667,12 @@ body {
 
   .gallery {
     height: 100%;
+  }
+
+  /****LOCATION****/
+  .location .head {
+    margin-right: 0;
+    margin-bottom: 50px;
   }
   
 }
