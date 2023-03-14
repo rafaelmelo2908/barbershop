@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1>Barbershop Site</h1>
-    <p>The website was developed with a mobile-first approach, ensuring that it looks great on any device. The website features information about the barbershop, including its history and the services offered.</p>
+    <p>The Barbershop Site is a responsive website that offers information about a local barbershop. Developed with a mobile-first approach, the site is designed to look great on any device. The site features details about the history of the barbershop and the services it offers.</p>
     <h2>Getting Started</h2>
     <p>To view the website, you can visit the live site at <a href="https://newcastlebarbershop.vercel.app/">newcastlebarbershop.com</a>.</p>
     <pre><code>https://newcastlebarbershop.vercel.app/</code></pre>
@@ -20,6 +20,7 @@
       <li>JavaScript</li>
     </ul>
     <h2>Features</h2>
+    <p>The Barbershop Site has several features that make it easy to navigate and use. These include:</p>
     <ul>
       <li>Responsive layout that adapts to different screen sizes</li>
       <li>Navigation bar that links to different sections of the site</li>
@@ -31,6 +32,6 @@
     <h2>Contributions</h2>
     <p>Contributions are welcome! If you find a bug or have an idea for a new feature, please open an issue or submit a pull request.</p>
     <h2>License</h2>
-    <p>This project has all rights reserved to Rafael Melo</p>
+    <p>The project is licensed under Rafael Melo's All Rights Reserved policy.</p>
   </body>
 </html>
