@@ -44,8 +44,10 @@ body {
 
 /* navbar regular css start */
 .navbar-area {
+  box-sizing: border-box;
   position: fixed;
   display: flex;
+  align-items: center;
   width: 100%;
   background: rgba(0,0,0,.6);
   border-bottom: 1px solid #000;
@@ -397,7 +399,7 @@ body {
 .appointment {
   padding: 50px 0;
   background-color: var(--color-prymary-light);
-  height: 100vh;
+  height: 100%;
   
 }
 
