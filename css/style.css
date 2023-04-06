@@ -72,6 +72,11 @@ body {
 .site-navbar ul li {
   margin: auto 32px;
 }
+
+.site-navbar ul li .logo {
+  width: 80%;
+}
+
 .site-navbar ul li a {
   color: #fff;
   padding: 20px;
@@ -588,7 +593,7 @@ span:last-child {
     overflow-x: hidden;
   }
 
-  .logo {
+  .site-navbar ul li .logo {
     display: none;
   }
 
