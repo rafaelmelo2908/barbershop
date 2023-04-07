@@ -68,7 +68,7 @@ header {
 }
 
 .site-navbar ul li {
-  margin: auto 32px;
+  margin: auto 10px;
 }
 
 .site-navbar ul li .logo {
@@ -596,7 +596,7 @@ span:last-child {
 @media screen and (max-width: 980px) {
 
   html {
-    scroll-padding-top: 22vh;
+    scroll-padding-top: 10vh;
   }
 
 
@@ -604,6 +604,10 @@ span:last-child {
 
     background-attachment:scroll;
     
+  }
+
+  header {
+    height: 10vh;
   }
   
   /* navbar css for mobile start */
@@ -616,9 +620,9 @@ span:last-child {
   .site-navbar ul {
     position: absolute;
     width: 100%;
-    height: calc(100vh - 22vh);
+    height: calc(100vh - 10vh);
     left: 0;
-    top: 22vh;
+    top: 10vh;
     flex-direction: column;
     align-items: center;
     border-top: 1px solid #444;
