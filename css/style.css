@@ -20,10 +20,6 @@ body {
   font-family: 'Kameron', serif;
 }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
 
 .home {
   background: url(/image/bg-home.jpg);
@@ -43,15 +39,17 @@ body {
 
 
 /* navbar regular css start */
-.navbar-area {
+header {
   box-sizing: border-box;
-  position: fixed;
+  height: 22vh;
+  padding: 15px 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: fixed;
   width: 100%;
-  background: rgba(0,0,0,.6);
+  background: rgba(0,0,0, .9);
   border-bottom: 1px solid #000;
-  height: 22vh;
   z-index: 10;
   
 }
@@ -506,7 +504,7 @@ body {
 ***************/
 
 .location {
-  padding: 100px 0;
+  padding: 50px 0;
   background: url(../image/bg-location.jpg);
   background-size: cover;
 }
@@ -589,10 +587,7 @@ span:last-child {
 
 
 @media (max-width: 1030px) {
-  body {
-    overflow-x: hidden;
-  }
-
+  
   .site-navbar ul li .logo {
     display: none;
   }
@@ -601,7 +596,7 @@ span:last-child {
 @media screen and (max-width: 980px) {
 
   html {
-    scroll-padding-top: 10vh;
+    scroll-padding-top: 22vh;
   }
 
 
@@ -610,16 +605,7 @@ span:last-child {
     background-attachment:scroll;
     
   }
-  .container {
-    max-width: 720px;
-    margin:auto 0;
-  }
-
-  .navbar-area {
-    height: 10vh;
-    
-    
-  }
+  
   /* navbar css for mobile start */
   .nav-toggler{
     display: block;
@@ -630,9 +616,9 @@ span:last-child {
   .site-navbar ul {
     position: absolute;
     width: 100%;
-    height: calc(100vh - 10vh);
+    height: calc(100vh - 22vh);
     left: 0;
-    top: 10vh;
+    top: 22vh;
     flex-direction: column;
     align-items: center;
     border-top: 1px solid #444;
